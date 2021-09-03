@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Meta Tags to use as mandatory ones-->
+        <meta charset="utf-8">
+        <meta author="Dennis">
+        <meta description="A Single Page Website to get know front end development using BS5, Jquery and FAIcons">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--End of Meta Tags-->
+
+        <title>Vivarttana | Simple One Page Website</title>
+
+        <!--CDN Section-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+        <!--End of CDN Section-->
+
+        <!--Custom CSS-->
+        <style>
+            .about-content{
+                font-family: 'Roboto', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 30px;
+                line-height: 40px;
+                display: flex;
+                align-items: center;
+                text-align: justify;
+            }
+
+            .contact-us-text{
+                font-family: 'Roboto', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 40px;
+            }
+
+            .contact-us-icons{
+                position: absolute;
+                width: 80px;
+                height: 80px;
+                left: 275px;
+                
+            }
+
+            .footer-text{
+                font-size: 30px;
+            }
+        </style>
+        <!-- End of Custom CSS-->
+    </head>
+    <body>
+
+        <header>
+
+            <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/logo/logo.png" width="50px">
+                    </a>
+               
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                     
+                    <div class="collapse navbar-collapse" id="navbar" style="display: block !important;">
+                        
+                        <ul class="navbar-nav" style="float: right;">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html" style="font-size: 30px !important">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about-us" style="font-size: 30px !important">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact-us" style="font-size: 30px !important;">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="header">
+                <img src="assets/images/webimg/header-bg.jpg" class="img-fluid" alt="Header Img" style="height: 500x !important;;">
+            </div>
+        </header>
+        <main>
+            <div id="about-us" style="padding-top: 15px !important;">
+                <div class="container  text-center">
+                    <span class="display-5">About XYZ and What we do</span>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-6 col-sm-12">
+                        <div class="container contents" style="padding-top:30px;">
+                            <img src="assets/images/webimg/about-us.jpg" class="img-fluid" alt="About-Us-Image" style="width: 482px;height: 500px;left: 104px;border-radius: 100px;">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-6 col-sm-12">
+                        <div class="container" style="padding-top: 60px !important;">
+                            <p class="about-content" ;">It is a long established fact that a reader will be 
+                                distracted by the readable content of a page when
+                                looking at its layout. The point of using Lorem
+                                Ipsum is that it has a more-or-less normal 
+                                distribution of letters, as opposed to using
+                                'Content here, content here', making it look like   
+                                readable English. Many desktop publishing 
+                                packages and web page editors now use 
+                                Lorem Ipsum as their default model text, 
+                                and a search for 'lorem ipsum' will uncover 
+                                many web sites still in their infancy.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contact-us" style="padding-top:30px !important">
+                <div class="container  text-center">
+                    <span class="display-5">Want to Reach out to us?</span>
+                </div>
+                <div class="row"  style="padding-top: 30px !important;">
+                    <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-6 col-sm-12">
+                        <div class="text-center">
+                            <p class="display-6" >Our Contact Details</p>
+                            <div style="padding-top: 10px !important;">
+                                <i class="fa fa-envelope-square fa-3x" style="padding-top: 10px !important;"></i>
+                                <p class="contact-us-text"  style="padding-top: 10px !important;">support@example.com</p>
+                            </div>
+                            <div  style="padding-top: 10px !important;">
+                                <i class="fa fa-phone-alt fa-3x"  style="padding-top: 10px !important;"></i>
+                                <p class="contact-us-text"  style="padding-top: 10px !important;">96859685966</p>
+                            </div>
+                            <div  style="padding-top: 10px !important;">
+                                <i class="fa fa-map-marker-alt fa-3x"  style="padding-top: 10px !important;"></i>
+                                <p class="contact-us-text"  style="padding-top: 10px !important;">#24, WhatEver Street,<br>Blah blah road,<br>Bangalore 560025</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-6 col-sm-12">
+                        <div class="container text-center">
+                            <span class="display-5">Write to us</span>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <form>
+                                    <div style="padding-top: 30px !important;">
+                                        <input class="form-control" type="text" placeholder="Please Enter your Name">
+                                    </div>
+                                    <div style="padding-top: 30px !important;">
+                                        <input class="form-control" type="text" placeholder="Please Enter your Phone Number">
+                                    </div>
+
+                                    <div style="padding-top: 30px !important;">
+                                        <input class="form-control" type="text" placeholder="Please Enter your Email Id">
+                                    </div>
+                                    <div style="padding-top: 30px !important;">
+                                        <textarea class="form-control" placeholder="Please Enter your Message" rows="6"></textarea>
+                                    </div>
+                                    <div style="padding-top: 20px !important;" class="text-center">
+                                        <button type="button" class="btn btn-outline-success">Send Message</button>
+                                    </div>
+                                </form>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer style="padding-top:60px !important">
+            <div class="container-fluid text-center" style="background-color: #c4c4c4; height: 150px;">
+                <p style="padding-top: 95px !important;" class="footer-text">All rights Reserved &copy; 2021 Example.com</p>
+            </div>
+        </footer>
+        <!--JS Section-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+        <!-- ENd of JS Section-->
+    </body>
+</html>
