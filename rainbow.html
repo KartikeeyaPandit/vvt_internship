@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <style>
+               
+                a {
+                text-decoration:none;
+                color:#FFF;
+                }
+                .rainbow-button {
+                width:calc(8vw + 8px);
+                height:calc(3vw + 8px);
+                background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+                border-radius:2px;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                font-weight:bold;
+                }
+                .rainbow-button:after {
+                content:attr(alt);
+                width:8vw;
+                height:3vw;
+                background-color:#191919;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                }
+                .rainbow-button:hover {
+                animation:slidebg 2s linear infinite;
+                }
+
+                @keyframes slidebg {
+                to {
+                    background-position:20vw;
+                }
+                }
+        </style>
+    </head>
+    <body>
+       <a href="#" class="rainbow-button" alt="Logout"></a>
+    </body>
+</html> 

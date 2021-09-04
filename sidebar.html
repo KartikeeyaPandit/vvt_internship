@@ -281,6 +281,40 @@
                     padding-top: 20px;
                     align-content: center;
         }
+
+
+       
+                .rainbow-button {
+                width:calc(12vw + 7px);
+                height:calc(3vw + 7px);
+                background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+                border-radius:2px;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                font-weight:bold;
+                color: black;
+                text-decoration: none;
+                }
+                .rainbow-button:after {
+                content:attr(alt);
+                width:12vw;
+                height:3vw;
+                background-color:white;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                color: black;
+                }
+                .rainbow-button:hover {
+                animation:slidebg 2s linear infinite;
+                }
+
+                @keyframes slidebg {
+                to {
+                    background-position:20vw;
+                }
+                }
         
         </style>
    </head>
@@ -416,25 +450,29 @@
   <section class="home-section" style="background-color: white;">
     <nav class="navbar navbar-expand-lg sticky-top" style="background-color: black; height: 70px;">
         <div class="container-fluid">
-       <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" style="background-color: yellow;">
+       <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" style="background-color: yellow;">
             <span class="navbar-toggler-icon"></span>
         </button>-->
-        <i class="fas fa-bars fa-2x" style="padding: 20px; color: white; !important;"></i>
-        <span class="text" style="color: white; ">ABC E-Commerce Website</span>
+        <i class="fas fa-bars fa-2x" style="padding: 20px; color: white !important;"></i>
+        <span class="text" style="color: yellow; text-shadow: 3px 3px #ff0000; font-size: 30px;">ABC E-Commerce Website</span>
 
         <div class="collapse navbar-collapse" id="navbar" style="display: block !important;">
                         
-            <ul class="navbar-nav" style="float: right;">
-                <li class="nav-item">
-                    <!--<a class="nav-link " href="#" style="font-size: 20px; text-align: center; !important">Logout</a>-->
-                    <button type="button" class="btn btn-warning">Logout</button>
-                </li>
+            <ul class="navbar-nav" style="margin-left: 20px;" >
+              <!--<li class="nav-item">
+                <a class="nav-link " href="#" style="font-size: 20px; text-align: center; !important">Logout</a>
+                <button type="button" class="btn btn-warning">Logout</button>
+                
+            </li>-->
+            
             </ul>
         </div>
     </nav>
-    <div class="hello" style="text-align: center; font-size: 30px;"><marquee direction='left'>Hello! User</marquee></div>
+    
+
+    <div class="hello" style="text-align: center; font-size: 30px;padding-top: 20px;"><marquee direction='left'>Hello! User</marquee></div>
     <div class="banner">
-        <img src="18980.jpg" class="img-fluid" alt="Header Img" style="height: 600px !important; width: 100%; border: 2px solid black; ">
+        <img src="18980.jpg" class="img-fluid" alt="Header Img" style="height: 600px !important; width: 100%; ">
     </div>
 
     <div id="about-us" style="padding-top: 15px !important; ">
@@ -513,12 +551,14 @@
             </div>
             <div class="col-md-6 col-lg-6 col-xl-3 col-xxl-3 col-sm-12"></div>
         </div>
-            
+            <div class="logout_btn" style="float: right;">
+              <a href="#" class="rainbow-button" alt="Logout"></a>
+            </div>
         </div>
 
         <footer style="padding-top:60px !important">
           <div class="container-fluid text-center" style="background-color: black; height: 120px;">
-              <p style="padding-top: 65px !important;color: white;" class="footer-text" >All rights Reserved &copy; 2021 Example.com</p>
+              <p style="padding-top: 65px !important;color: white;" class="footer-text" >All rights Reserved &copy; 2021 ABC E-Comm.com</p>
           </div>
       </footer>
      
