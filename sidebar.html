@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
@@ -130,8 +130,8 @@
         .sidebar .nav-links li .sub-menu{
           padding: 6px 6px 14px 80px;
           margin-top: -10px;
-          background: gray;
-          ;
+          background: black;
+          border: 2px solid white;
           display: none;
         }
         .sidebar .nav-links li.showMenu .sub-menu{
@@ -281,9 +281,6 @@
                     padding-top: 20px;
                     align-content: center;
         }
-
-
-       
                 .rainbow-button {
                 width:calc(12vw + 7px);
                 height:calc(3vw + 7px);
@@ -315,6 +312,16 @@
                     background-position:20vw;
                 }
                 }
+
+                @media only screen and (max-width: 640px) { 
+                  .nav_button { 
+                    display: none; 
+                  } 
+                }
+                .btn-black:hover{
+                  background-color:rgb(8, 250, 149);  
+                }
+                
         
         </style>
    </head>
@@ -333,7 +340,27 @@
           <span class="link_name">Home</span>
         </a>
         <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Home</a></li>
+          <li><a class="link_name" href="#" >Home</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <!--<i class='bx bx-plug' ></i>-->
+            <i class="fas fa-th-list"></i>
+            <span class="link_name">Categories</span>
+          </a>
+         <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#about-us" style="color: white;">Categories</a></li><hr>
+          <li><a href="#" style="color: white;">Electronics</a></li>
+          <li><a href="#" style="color: white;">Fashion</a></li>
+          <li><a href="#" style="color: white;">Grocery</a></li>
+          <li><a href="#" style="color: white;">Toys</a></li>
+          <li><a href="#" style="color: white;">Watches</a></li>
+          <li><a href="#" style="color: white;">Home Appliances</a></li>
+          <li><a href="#" style="color: white;">Beauty</a></li>
         </ul>
       </li>
       <li>
@@ -341,12 +368,12 @@
           <a href="#">
             <!--<i class='bx bx-collection' ></i>-->
             <i class="fas fa-shopping-basket" style="color: white;"></i>
-            <span class="link_name">My Orders</span>
+            <span class="link_name" >My Orders</span>
           </a>
           <!--<i class='bx bxs-chevron-down arrow' ></i>-->
         </div>
         <ul class="sub-menu">
-          <li><a class="link_name" href="#">My Orders</a></li>
+          <li><a class="link_name" href="#" >My Orders</a></li>
           <!--<li><a href="#">HTML & CSS</a></li>
           <li><a href="#">JavaScript</a></li>
           <li><a href="#">PHP & MySQL</a></li>-->
@@ -357,12 +384,12 @@
           <a href="#account">
             <!--<i class='bx bx-book-alt' ></i>-->
             <i class="fas fa-user-circle"></i>
-            <span class="link_name">My Account</span>
+            <span class="link_name" >My Account</span>
           </a>
           <!--<i class='bx bxs-chevron-down arrow' ></i>-->
         </div>
         <ul class="sub-menu">
-          <li><a class="link_name" href="#account">My Account</a></li>
+          <li><a class="link_name" href="#account" >My Account</a></li>
           <!--<li><a href="#">Web Design</a></li>
           <li><a href="#">Login Form</a></li>
           <li><a href="#">Card Design</a></li>-->
@@ -372,20 +399,20 @@
         <a href="#">
           <!--<i class='bx bx-pie-chart-alt-2' ></i>-->
           <i class="fas fa-shopping-cart"></i>
-          <span class="link_name">My Cart</span>
+          <span class="link_name" >My Cart</span>
         </a>
         <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">My Cart</a></li>
+          <li><a class="link_name" href="#" >My Cart</a></li>
         </ul>
       </li>
       <li>
         <a href="#contact-us">
           <!--<i class='bx bx-line-chart' ></i>-->
           <i class="fas fa-phone"></i>
-          <span class="link_name">Contact Us</span>
+          <span class="link_name" >Contact Us</span>
         </a>
         <ul class="sub-menu blank">
-          <li><a class="link_name" href="#contact-us">Contact Us</a></li>
+          <li><a class="link_name" href="#contact-us" >Contact Us</a></li>
         </ul>
       </li>
       <li>
@@ -393,12 +420,12 @@
           <a href="#about-us">
             <!--<i class='bx bx-plug' ></i>-->
             <i class="fas fa-info"></i>
-            <span class="link_name">About Us</span>
+            <span class="link_name" >About Us</span>
           </a>
          <!-- <i class='bx bxs-chevron-down arrow' ></i>-->
         </div>
         <ul class="sub-menu">
-          <li><a class="link_name" href="#about-us">About Us</a></li>
+          <li><a class="link_name" href="#about-us" >About Us</a></li>
           <!--<li><a href="#">UI Face</a></li>
           <li><a href="#">Pigments</a></li>
           <li><a href="#">Box Icons</a></li>-->
@@ -408,10 +435,10 @@
         <a href="#">
           <!--<i class='bx bx-compass' ></i>-->
           <i class="fas fa-shield-alt"></i>
-          <span class="link_name">Privacy Policy</span>
+          <span class="link_name" ">Privacy Policy</span>
         </a>
         <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Privacy Policy</a></li>
+          <li><a class="link_name" href="#" >Privacy Policy</a></li>
         </ul>
       </li>
       <li>
@@ -453,25 +480,36 @@
        <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" style="background-color: yellow;">
             <span class="navbar-toggler-icon"></span>
         </button>-->
-        <i class="fas fa-bars fa-2x" style="padding: 20px; color: white !important;"></i>
-        <span class="text" style="color: yellow; text-shadow: 3px 3px #ff0000; font-size: 30px;">ABC E-Commerce Website</span>
+        <i class="fas fa-bars fa-2x nav_button" style="padding: 20px; color: white !important;"></i>
+        <span class="text" style="color: yellow; text-shadow: 3px 3px #ff0000; font-size: 26px;">ABC E-Commerce</span>
 
         <div class="collapse navbar-collapse" id="navbar" style="display: block !important;">
                         
-            <ul class="navbar-nav" style="margin-left: 20px;" >
-              <!--<li class="nav-item">
-                <a class="nav-link " href="#" style="font-size: 20px; text-align: center; !important">Logout</a>
+            <!--<ul class="navbar-nav" style="margin-left: 20px;" >
+              <li class="nav-item">
+               <a class="nav-link " href="#" style="font-size: 20px; text-align: center; !important">Logout</a>
                 <button type="button" class="btn btn-warning">Logout</button>
                 
-            </li>-->
+                
+            </li>
             
-            </ul>
+            </ul>-->
         </div>
     </nav>
     
 
-    <div class="hello" style="text-align: center; font-size: 30px;padding-top: 20px;"><marquee direction='left'>Hello! User</marquee></div>
-    <div class="banner">
+    <div class="hello" style="text-align: center; font-size: 30px;padding-top: 30px;"><marquee direction='left'>Hello! User</marquee></div>
+    <div class="row">
+      <div class="col-md-12 col-lg-12 col-xl-12 col-xxl-12 col-sm-12" style="background-color: black;">
+        <div class="search_box" style="text-align: center;  " >
+          <!--<label class="search" for="search" style="font-weight:bold; color: white;">Search</label>-->
+          <input type="text" name="search" placeholder="Search here" id="search" style="  border-radius: 10px; width: 300px;">
+          <button type="button" class="btn btn-black" style="color: red; border: 4px solid white; " ><b>Search</b></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner" style="padding-top: 30px;">
         <img src="18980.jpg" class="img-fluid" alt="Header Img" style="height: 600px !important; width: 100%; ">
     </div>
 
@@ -484,8 +522,7 @@
                 <div class="container contents" style="padding-top:30px;">
                     <img src="about us.jpg" class="img-abt-us" alt="About-Us-Image" >
                 </div>
-            </div>
-            
+            </div>   
        </div>
     </div>
         <div class="col-md-6 col-lg-6 col-xl-12 col-xxl-12 col-sm-12">
@@ -497,32 +534,32 @@
         </div>
       </div>
 
-        <div id="contact-us" style="padding-top:30px !important;background-color: yellow;">
+        <div id="contact-us" style="padding-top:30px !important;background-color: yellow; padding:3px">
             <div class="container  text-center">
                 <span class="display-5">Contact Us</span>
             </div>
             <div class="row"  style="padding-top: 30px !important;">
                 <div class="col-sm">
-                    <div class="text-center">
+                    <div class="text-center" style="border:  solid white; border-width: 39px;">
                         <div style="padding-top: 10px !important;">
                             <i class="fa fa-envelope-square fa-3x" style="padding-top: 10px !important;"></i>
-                            <p class="contact-us-text"  style="padding-top: 15px !important;">something@something.com</p>
+                            <p class="contact-us-text"  style="padding-top: 15px !important;">Email Us at:<br>something@something.com</p>
                         </div>
                       </div>
                     </div>
                         <div class="col-sm">
-                          <div class="text-center">
+                          <div class="text-center" style="border: solid white; border-width: 39px;">
                           <div  style="padding-top: 10px !important;">
                               <i class="fa fa-phone-alt fa-3x"  style="padding-top: 10px !important;"></i>
-                              <p class="contact-us-text"  style="padding-top: 15px !important;">9773660202</p>
+                              <p class="contact-us-text"  style="padding-top: 15px !important;">Call Us at:<br>9773660202</p>
                         </div>
                       </div>
                     </div>
                         <div class="col-sm">
-                          <div class="text-center">
+                          <div class="text-center" style="border: 2px solid white; border-width: 39px;">
                             <div  style="padding-top: 10px !important;">
                                 <i class="fa fa-map-marker-alt fa-3x"  style="padding-top: 10px !important;"></i>
-                                <p class="contact-us-text"  style="padding-top: 15px !important;">#30-6, Some Street,<br>ABC Block,<br>Mumbai </p>
+                                <p class="contact-us-text"  style="padding-top: 15px !important;">#30-6, Some Street,<br>ABC Block,Mumbai </p>
                         </div>
                     </div>
                 </div>
@@ -543,20 +580,28 @@
             </div>
             <div class="col-md-6 col-lg-6 col-xl-3 col-xxl-3 col-sm-12">
                 <div class="container" style="padding-top: 60px !important;">
-                    <p class="about-content">Name </p><br>
-                    <p class="about-content">E-mail </p><br>
-                    <p class="about-content">Contact </p><br>
+                    <p class="about-content" style="font-size: 20px;">Name </p><br>
+                    <p class="about-content" style="font-size: 20px;">E-mail </p><br>
+                    <p class="about-content" style="font-size: 20px;">Contact </p><br>
+                    <p class="about-content" style="font-size: 20px;">Address </p><br>
                    
                 </div>
             </div>
             <div class="col-md-6 col-lg-6 col-xl-3 col-xxl-3 col-sm-12"></div>
         </div>
-            <div class="logout_btn" style="float: right;">
-              <a href="#" class="rainbow-button" alt="Logout"></a>
+        
+        <div class="row">
+          <div class="col-md-6 col-lg-6 col-xl-4 col-xxl-4 col-sm-12"></div>
+          <div class="col-md-6 col-lg-6 col-xl-4 col-xxl-4 col-sm-12">
+            <div class="logout_btn" style="margin-left:140px ;padding-top: 20px; margin-right:10px; ">
+              <a href="#" class="rainbow-button" alt="Logout" ></a>
             </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-4 col-xxl-4 col-sm-12"></div>
+            
         </div>
 
-        <footer style="padding-top:60px !important">
+        <footer style="padding-top:50px !important">
           <div class="container-fluid text-center" style="background-color: black; height: 120px;">
               <p style="padding-top: 65px !important;color: white;" class="footer-text" >All rights Reserved &copy; 2021 ABC E-Comm.com</p>
           </div>
